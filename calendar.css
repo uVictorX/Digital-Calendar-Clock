@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron;
+  color: white;
+  user-select: none;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #303136;
+}
+
+.calendar .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  max-width: 560px;
+  width:  90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin-top: 50px;
+  transition: all 2s ease;
+}
+
+.calendar .box .date {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.date {
+  letter-spacing: 2px;
+  margin-left: -30px;
+}
+
+.date .dbox {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #242426;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 25px;
+}
+
+.dbox .text {
+  margin-top: -5px;
+}
+
+.dbox .year-text {
+  margin-top: 0px;
+}
+
+.dbox .num {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 20px;
+}
+
+.dbox .year-num {
+  margin-top: 5px;
+}
+
+.dbox .month-name, .dbox .day-name {
+  margin-top: 5px;
+  font-size: 10px;
+}

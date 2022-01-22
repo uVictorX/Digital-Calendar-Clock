@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+  <head>
+    <title>Digital Calendar/Clock</title>
+    <meta property="og:title" content="Digital Calendar/Clock">
+    <meta property="og:image" content="https://freepikpsd.com/file/2020/04/chick-emoji-png-.png">
+    <meta property="og:description" content="Just a test project which has a digital calendar and digital clock. Made by: uVictorX">
+
+    <meta charset="UTF-8">
+    <meta name="viewpot" content="width=device-width">
+
+    <link href="clock.css" rel="stylesheet" type="text/css">
+    <link href="calendar.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </head>
+  <body>
+    <div class='altern'>
+      <div class='box'>
+        <div class="buttons calBtnDiv active" id='calBtn'>
+          <button class="button calBtn"><ion-icon name="calendar-number-outline"></ion-icon></button>
+        </div>
+
+        <div class="clkBtnDiv buttons">
+          <button class="button clkBtn left"><ion-icon name="alarm-outline"></ion-icon></button>
+        </div>
+      </div> 
+    </div>
+    <section class="calendar">
+      <div class="box">
+        <div class="date">
+          <div class="month dbox">
+            <span class="text">Month</span>
+            <span class="month-num num">_</span>
+            <span class="month-name">_</span>
+          </div>
+          <div class="day dbox">
+            <span class="text">Day</span>
+            <span class="day-num num">_</span>
+            <span class="day-name">_</span>
+          </div>
+          <div class="year dbox">
+            <span class="text year-text">Year</span>
+            <span class="year-num num">_</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="clock">
+      <div class="container">
+        <div class="time">
+          <div class="time-colon">
+            <div class="time-text">
+              <span class="num hour_num"></span>
+              <span class="text" id="hTxt"></span>
+            </div>
+            <span class="colon">:</span>
+          </div>
+          <div class="time-colon">
+            <div class="time-text">
+              <span class="num min_num"></span>
+              <span class="text" id="minTxt"></span>
+            </div>
+            <span class="colon">:</span>
+          </div>
+          <div class="time-colon">
+            <div class="time-text">
+              <span class="num sec_num"></span>
+              <span class="text" id="secTxt"></span>
+            </div>
+            <span class="am_pm"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="clock.js"></script>
+    <script src="d.calendar.js"></script>
+    <script src="sections.js"></script>
+  </body>
+</html>
